@@ -64,19 +64,47 @@
 
 
 // GET AVERAGE AGE
-function getAverageAge(arr){
-    let total = 0;
-    for (person in arr){
-        total += arr[person].age;
-    }
+// function getAverageAge(arr){
+//     let total = 0;
+//     for (person in arr){
+//         total += arr[person].age;
+//     }
 
-    return total / arr.length;
-}
+//     return total / arr.length;
+// }
 
-let john = { name: "John", age: 25 };
-let pete = { name: "Pete", age: 30 };
-let mary = { name: "Mary", age: 29 };
+// let john = { name: "John", age: 25 };
+// let pete = { name: "Pete", age: 30 };
+// let mary = { name: "Mary", age: 29 };
 
-let arr = [ john, pete, mary ];
+// let arr = [ john, pete, mary ];
 
-alert( getAverageAge(arr) ); // (25 + 30 + 29) / 3 = 28
+// alert( getAverageAge(arr) ); // (25 + 30 + 29) / 3 = 28
+
+// //CREATE KEYED OBJECT FROM ARRAY
+// function groupById(arr){
+//     newObj = {};
+//     for (person of arr){
+//         newObj[person.id] = person
+//     }
+//     return newObj;
+// }
+
+// let users = [
+//   {id: 'john', name: "John Smith", age: 20},
+//   {id: 'ann', name: "Ann Smith", age: 24},
+//   {id: 'pete', name: "Pete Peterson", age: 31},
+// ];
+
+// let usersById = groupById(users);
+// console.log(usersById);
+
+// /*
+// // after the call we should have:
+
+// usersById = {
+//   john: {id: 'john', name: "John Smith", age: 20},
+//   ann: {id: 'ann', name: "Ann Smith", age: 24},
+//   pete: {id: 'pete', name: "Pete Peterson", age: 31},
+// }
+// */
